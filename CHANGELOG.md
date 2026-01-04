@@ -5,6 +5,55 @@ All notable changes to CodeContext will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [4.0.0](https://github.com/totaland/codecontext/compare/v3.2.1...v4.0.0) (2026-01-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* Refactored parser architecture from library-quality to enterprise-grade implementation
+
+### Features
+
+* add automated versioned releases with changelog integration ([6c2a8da](https://github.com/totaland/codecontext/commit/6c2a8dac0f2d883c8069027636959202ba65dc46))
+* add comprehensive C++ language support with security hardening ([d27642c](https://github.com/totaland/codecontext/commit/d27642cbb174d7db0c96245d97aa6b5bc656e064))
+* add comprehensive Swift language support with P1/P2 enhancements ([b73dbf6](https://github.com/totaland/codecontext/commit/b73dbf63f53c1c15c80a634ba34ff61d77be9d4b))
+* add manifest.json for MCP desktop extension submission ([fadac3d](https://github.com/totaland/codecontext/commit/fadac3d6d1fcab46e0b6505a2fb92d5b5258b53b))
+* adding dart_support ([7747318](https://github.com/totaland/codecontext/commit/7747318536f46a139e320834e08c1d74541b33a1))
+* enhance Dart parser with comprehensive typedef extraction ([ffdaa57](https://github.com/totaland/codecontext/commit/ffdaa5796f3f6a32c6807d7ebf57314470c27a02))
+* implement advanced performance optimizations and memory management ([ed0b253](https://github.com/totaland/codecontext/commit/ed0b253d2f46d4abda686d9ed6994d5a357a4ce7))
+* implement comprehensive Dart and Flutter language support ([7538ae2](https://github.com/totaland/codecontext/commit/7538ae2b97853525290af09495364f4e70538390))
+* implement comprehensive path normalization and cross-platform support ([67be2a5](https://github.com/totaland/codecontext/commit/67be2a53282544a936f2ded16bf9cba087f178cc))
+* implement comprehensive thread safety and performance optimizations ([c99ffc2](https://github.com/totaland/codecontext/commit/c99ffc29080b346f8bd992073d182817f060ceec))
+* implement dynamic target directory support for multi-project analysis ([62d1cd4](https://github.com/totaland/codecontext/commit/62d1cd495a44440e5829a69a864126d7d6a1a673))
+* implement Phase 2 CI/CD architecture with release-please orchestration ([f4ee612](https://github.com/totaland/codecontext/commit/f4ee6128017c78442799d3afc0d2b25db7f9d232))
+* implement production-ready parser architecture with comprehensive error handling ([4d04706](https://github.com/totaland/codecontext/commit/4d047068010ef423761a91530a4a90b442be5700))
+* upgrade MCP SDK from v0.2.0 to v0.3.0 with comprehensive fixes ([abb767a](https://github.com/totaland/codecontext/commit/abb767a2b086b29272af304a1db550995d163cdc))
+
+
+### Bug Fixes
+
+* add -buildvcs=false flag to resolve CI build failures ([d00ac9e](https://github.com/totaland/codecontext/commit/d00ac9e2e54364c5eeca2911d6461904b45f5935))
+* add clarifying comment to resolve CI build cache issues ([dae7468](https://github.com/totaland/codecontext/commit/dae7468991cf6b0d0547965570f72ff5fd89d5b3))
+* add issues permission to resolve release-please label creation error ([3d87e4b](https://github.com/totaland/codecontext/commit/3d87e4b8cebe6247eed2041eb2a5e0078fad7040))
+* add robust error handling to MCP server Stop method ([d2dc5ff](https://github.com/totaland/codecontext/commit/d2dc5ff7cf56c1dc850506fe614fd87292f8e1bb))
+* adjust performance test thresholds for CI reliability ([5b2b973](https://github.com/totaland/codecontext/commit/5b2b9732bda6ea711efd67514865cd126955ca15))
+* exclude_patterns from config.yaml now properly excludes files ([123f67e](https://github.com/totaland/codecontext/commit/123f67e8c5e74c09bbe0dd0037778e1a0a182c62))
+* prevent duplicate workflow runs by making release-please manual only ([c860767](https://github.com/totaland/codecontext/commit/c8607678d193383ce2c8a5d5445f599ed6066feb))
+* redirect file watcher logs to stderr to prevent MCP protocol corruption ([18f57be](https://github.com/totaland/codecontext/commit/18f57bef36b82ba22efa3b13f60eb550c0201b1c))
+* relax C++ performance test timeout for CI environment ([b093a3e](https://github.com/totaland/codecontext/commit/b093a3e1f76f6fbe2a9e7b65d21d477690d80ba0))
+* resolve all CI test failures with appropriate timeout adjustments ([ae27ce3](https://github.com/totaland/codecontext/commit/ae27ce33507e624680e2bc1cf62ffb71f21fffee))
+* resolve CI test failures and improve C++ P2 feature detection ([f226a46](https://github.com/totaland/codecontext/commit/f226a46efe4491c964c488e24e0ac6457c566845))
+* resolve GitHub Actions workflow failures ([f2f5e64](https://github.com/totaland/codecontext/commit/f2f5e6443c41015180fc4ccbc798faf95cd06c41))
+* resolve MCP integration test timeouts with improved synchronization ([e0516e8](https://github.com/totaland/codecontext/commit/e0516e85221405c604aa751909a1240095e741e7))
+* resolve MCP test coverage file descriptor issue ([7364eaa](https://github.com/totaland/codecontext/commit/7364eaac9864da11032006073c414e4b525cd879))
+* resolve test assertion failures in MCP dynamic targeting ([b1a5eae](https://github.com/totaland/codecontext/commit/b1a5eae978230bf7827cf27eb5cb70e7998aae0e))
+* resolve test isolation issues for CI reliability ([5bd804b](https://github.com/totaland/codecontext/commit/5bd804bcef77fc4e44f6154accd1a969d7243898))
+* resolve test isolation issues for CI reliability ([dfffd8c](https://github.com/totaland/codecontext/commit/dfffd8c5869fdee3640324ac064bae9712567c41))
+* resolve thread safety issues in progress tracking and compact controller ([255417e](https://github.com/totaland/codecontext/commit/255417ea5fa7852acf47a7431777bd177db661f3))
+* resolve type conversion issue in analyzer GetSupportedLanguages ([a720c09](https://github.com/totaland/codecontext/commit/a720c098531395491e08b152953beecdb8f5d5ea))
+* update mapstructure to v2.3.0 to resolve vulnerability ([1124330](https://github.com/totaland/codecontext/commit/11243300e613f4bd99f5daa462b2203d1081a6ea))
+* upgrade fsnotify from v1.8.0 to v1.9.0 ([88e651c](https://github.com/totaland/codecontext/commit/88e651c488e5962e453555c403c2ba4552e109df))
+
 ## [3.2.1](https://github.com/nmakod/codecontext/compare/v3.2.0...v3.2.1) (2025-09-01)
 
 
